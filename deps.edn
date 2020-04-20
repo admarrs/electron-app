@@ -1,0 +1,23 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/clojurescript {:mvn/version "1.10.597"}
+        com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
+        com.bhauman/figwheel-main {:mvn/version "0.2.3"}
+        reagent {:mvn/version "0.10.0" :exclusions [cljsjs/react cljsjs/react-dom]}
+        re-frame {:mvn/version "0.11.0"}}
+ :paths []
+ :aliases {:main    {:extra-paths ["src/main" "src/config/prod"]
+                     :main-opts   ["--main" "figwheel.main"
+                                   "--optimizations" "simple"
+                                   "--build-once" "main"]}
+           :render  {:extra-paths ["src/render"]
+                     :main-opts   ["--main" "figwheel.main"
+                                   "--optimizations" "simple"
+                                   "--build-once" "render"]}
+           :dev     {:extra-paths ["src/main" "src/render" "src/config/dev" "src/test"]
+                     :main-opts   ["--main" "figwheel.main"
+                                   "--build" "dev"
+                                   "--repl"]}
+           :test    {:extra-paths ["src/main" "src/render" "src/config/dev" "src/test"]
+                     :main-opts   ["--main" "figwheel.main"
+                                   "--compile-opts" "test.cljs.edn"
+                                   "--main" "app.test.runner-cmdline"]}}}

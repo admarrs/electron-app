@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "main": "bin/main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . --out executables --ignore '.*\\.edn' --ignore '.cpcache' --ignore '.gitignore' --ignore 'readme.md' --ignore 'src' --ignore 'cljs-temp' --ignore 'resources/index-dev.html' --ignore 'resources/test.html'"
+  },
+  "devDependencies": {
+    "electron": "8.2.2",
+    "electron-packager": "14.2.1",
+    "ws": ">=7.2.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}

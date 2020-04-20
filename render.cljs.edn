@@ -1,0 +1,5 @@
+^{:launch-node false}
+{:main electron-app.renderer.core
+ :output-dir "cljs-temp"
+ :output-to "bin/render.js"
+ :target :nodejs}

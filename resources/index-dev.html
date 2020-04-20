@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- unsafe-eval and connect-src are necessary to enable Figwheel -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval'; connect-src ws://localhost:9500">
+    <link href="css/style.css" rel="stylesheet">
+    <title>electron-app</title>
+  </head>
+  <body>
+    <div class="flex h-screen overflow-hidden antialiased">
+      <div id="app" class="flex w-full">
+        <p>Loading...</p>
+      </div>
+    </div>
+
+    <script src="../bin/render.js"></script>
+  </body>
+</html>
