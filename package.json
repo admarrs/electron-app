@@ -7,7 +7,7 @@
     "package": "electron-packager . --out executables --ignore '.*\\.edn' --ignore '.cpcache' --ignore '.gitignore' --ignore 'readme.md' --ignore 'src' --ignore 'cljs-temp' --ignore 'resources/index-dev.html' --ignore 'resources/test.html'"
   },
   "devDependencies": {
-    "electron": "8.2.2",
+    "electron": "9.1.0",
     "electron-packager": "14.2.1",
     "ws": ">=7.2.0",
     "tailwindcss": "^1.2.0"
